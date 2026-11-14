@@ -1,0 +1,15 @@
+{
+  "example": "synthetic_automation",
+  "ok": true,
+  "node_count": 6,
+  "request_count": 2,
+  "candidate_level": "offline_request_schema_only",
+  "rejections": {
+    "target_mismatch": "REQUEST_TARGET_MISMATCH",
+    "invalid_input": "CLIENT_INPUT_ERROR"
+  },
+  "pending_state": "pending",
+  "completed_state": "completed",
+  "live_calls": 0,
+  "executable": false
+}

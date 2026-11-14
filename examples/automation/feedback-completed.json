@@ -1,0 +1,15 @@
+{
+  "app_id": "synthetic-app",
+  "flow_id": "synthetic-branch",
+  "run_id": "synthetic-run-1",
+  "terminal_status": "completed",
+  "active": false,
+  "run_succeeded": true,
+  "verification": {
+    "checked_after_finish": true,
+    "static_error_count": 0,
+    "runtime_error_count": 0,
+    "error": null,
+    "latest_runtime_error": null
+  }
+}

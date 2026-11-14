@@ -1,0 +1,8 @@
+{
+  "app_id": "synthetic-app",
+  "flow_id": "synthetic-branch",
+  "run_id": "synthetic-run-1",
+  "terminal_status": "running",
+  "active": true,
+  "run_succeeded": null
+}

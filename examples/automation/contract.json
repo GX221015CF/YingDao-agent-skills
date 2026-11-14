@@ -1,0 +1,101 @@
+{
+  "target": {
+    "app_id": "synthetic-app",
+    "flow_id": "synthetic-branch"
+  },
+  "tools": [
+    {
+      "name": "flow.edit_blocks",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "flow_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "op": {
+            "const": "insert",
+            "type": "string"
+          },
+          "block_index": {
+            "type": "integer",
+            "const": -1
+          },
+          "blocks": {
+            "type": "array",
+            "minItems": 6,
+            "maxItems": 6,
+            "items": {
+              "type": "object",
+              "properties": {
+                "prototype_name": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "comment": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "prototype_name",
+                "comment"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "flow_id",
+          "op",
+          "block_index",
+          "blocks"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "flow.fill_blocks",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "flow_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fills": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "object",
+              "properties": {
+                "block_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "inputs": {
+                  "type": "object",
+                  "minProperties": 1
+                },
+                "outputs": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "block_id",
+                "inputs"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "flow_id",
+          "fills"
+        ],
+        "additionalProperties": false
+      }
+    }
+  ]
+}

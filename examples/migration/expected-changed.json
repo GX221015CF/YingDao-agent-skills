@@ -1,0 +1,45 @@
+{
+  "ok": false,
+  "level": "offline_inventory_and_byte_integrity",
+  "declared_components_complete": true,
+  "component_counts": {
+    "flows": 1,
+    "globals": 0,
+    "selectors": 2,
+    "resources": 1,
+    "dependencies": 0
+  },
+  "resource_count": 1,
+  "binding_count": 2,
+  "shared_resources": [
+    "U01"
+  ],
+  "resources": [
+    {
+      "resource_id": "U01",
+      "state": "changed"
+    }
+  ],
+  "mappings": [
+    {
+      "selector_id": "S01",
+      "field": "semantic.image",
+      "resource_id": "U01",
+      "status": "disabled",
+      "file": "modified.svg"
+    },
+    {
+      "selector_id": "S02",
+      "field": "semantic.image",
+      "resource_id": "U01",
+      "status": "disabled",
+      "file": "modified.svg"
+    }
+  ],
+  "source_authenticity_verified": false,
+  "image_decode_verified": false,
+  "target_saved_state_verified": false,
+  "account_access_verified": false,
+  "native_import_verified": false,
+  "live_calls": 0
+}

@@ -1,0 +1,58 @@
+{
+  "format": "yingdao-offline-inventory/1",
+  "app": {
+    "id": "synthetic-app",
+    "name": "Synthetic application"
+  },
+  "components": {
+    "flows": {
+      "complete": true,
+      "items": [
+        "flow-demo"
+      ]
+    },
+    "globals": {
+      "complete": true,
+      "items": []
+    },
+    "selectors": {
+      "complete": true,
+      "items": [
+        "S01",
+        "S02"
+      ]
+    },
+    "resources": {
+      "complete": true,
+      "items": [
+        "U01"
+      ]
+    },
+    "dependencies": {
+      "complete": true,
+      "items": []
+    }
+  },
+  "resources": [
+    {
+      "id": "U01",
+      "path": "reference.svg",
+      "bytes": 129,
+      "sha256": "ce4ea588c3b327541002ca5e6363f1fa52f201745252f50cf99496dd6be084f8"
+    }
+  ],
+  "bindings": [
+    {
+      "selector_id": "S01",
+      "field": "semantic.image",
+      "resource_id": "U01",
+      "status": "disabled"
+    },
+    {
+      "selector_id": "S02",
+      "field": "semantic.image",
+      "resource_id": "U01",
+      "status": "disabled"
+    }
+  ]
+}

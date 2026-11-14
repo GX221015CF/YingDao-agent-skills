@@ -1,0 +1,13 @@
+# 本地上下文、内部来源和执行记录；不能用本文件代替发布审查。
+.local/
+work/
+.git/
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+*.log
+*.ydtransfer
+*.bot
+*.whl

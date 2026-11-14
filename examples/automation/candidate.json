@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "mode": "offline_only",
+  "target": {
+    "app_id": "synthetic-app",
+    "flow_id": "synthetic-branch"
+  },
+  "requests": [
+    {
+      "name": "flow.edit_blocks",
+      "arguments": {
+        "flow_id": "synthetic-branch",
+        "op": "insert",
+        "block_index": -1,
+        "blocks": [
+          {
+            "prototype_name": "programing.variable",
+            "comment": "set_probe_status"
+          },
+          {
+            "prototype_name": "workflow.if",
+            "comment": "test_probe_status"
+          },
+          {
+            "prototype_name": "programing.log",
+            "comment": "log_true_branch"
+          },
+          {
+            "prototype_name": "workflow.else",
+            "comment": "start_false_branch"
+          },
+          {
+            "prototype_name": "programing.log",
+            "comment": "log_false_branch"
+          },
+          {
+            "prototype_name": "workflow.endif",
+            "comment": "end_probe_condition"
+          }
+        ]
+      }
+    },
+    {
+      "name": "flow.fill_blocks",
+      "arguments": {
+        "flow_id": "synthetic-branch",
+        "fills": [
+          {
+            "block_id": "synthetic-block-0",
+            "inputs": {
+              "value_type": "str",
+              "value": {
+                "text": "完成"
+              }
+            },
+            "outputs": {
+              "variable": "接口验证状态"
+            }
+          },
+          {
+            "block_id": "synthetic-block-1",
+            "inputs": {
+              "operand1": {
+                "variable": "接口验证状态"
+              },
+              "operator": "==",
+              "operand2": {
+                "text": "完成"
+              }
+            }
+          },
+          {
+            "block_id": "synthetic-block-2",
+            "inputs": {
+              "type": "info",
+              "text": {
+                "text": "VF_PROBE_TRUE"
+              }
+            }
+          },
+          {
+            "block_id": "synthetic-block-4",
+            "inputs": {
+              "type": "info",
+              "text": {
+                "text": "VF_PROBE_FALSE"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

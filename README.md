@@ -1,6 +1,6 @@
 # YingDao-agent-skills
 
-面向影刀 RPA 的 Agent 协作方法、最小离线工具和脱敏案例。当前为 **v0.1.0 待公开候选**：文档、可运行离线示例和真实案例摘要纳入 MIT 适用范围审阅及本地版本管理。仓库仍为私有，是否公开由维护者另行决定；本候选没有安装或替换全局 Skill。
+面向影刀 RPA 的 Agent 协作方法、最小离线工具和脱敏案例。当前为 **v0.1.0**：文档、可运行离线示例和真实案例摘要已纳入公开范围审阅与版本管理。仓库公开提供这些材料，不会安装或替换全局 Skill。
 
 这里有两条路径：
 
@@ -9,11 +9,11 @@
 
 ## 112秒演示：自动化搭建 Skill
 
-[![影刀自动化搭建 Skill：从自然语言需求到订单核查流程；个人项目，非官方](docs/media/yingdao-rpa-copilot-cover.png)](docs/media/yingdao-rpa-copilot-intro.mp4)
+[![影刀自动化搭建 Skill：从自然语言需求到订单核查流程；个人项目，非官方](docs/media/yingdao-rpa-copilot-cover.png)](https://gx221015cf.github.io/YingDao-agent-skills/)
 
-**[打开视频文件页](docs/media/yingdao-rpa-copilot-intro.mp4)** · [查看原文件或下载](https://github.com/GX221015CF/YingDao-agent-skills/raw/refs/heads/main/docs/media/yingdao-rpa-copilot-intro.mp4) · [本次案例与证据范围](docs/case-studies/order-recording-demo.md)
+**[▶ 在线播放介绍视频](https://gx221015cf.github.io/YingDao-agent-skills/)** · [直接打开 MP4 / 下载](https://gx221015cf.github.io/YingDao-agent-skills/yingdao-rpa-copilot-intro.mp4) · [仓库原文件备用入口](https://github.com/GX221015CF/YingDao-agent-skills/raw/refs/heads/main/docs/media/yingdao-rpa-copilot-intro.mp4) · [本次案例与证据范围](docs/case-studies/order-recording-demo.md)
 
-112秒，1080p/30fps，H.264，约2.70 MiB，静音字幕版。GitHub是否显示播放控件取决于访问环境；可通过文件页或原文件入口取得视频。仓库目前私有，链接需要相应访问权限。
+112秒，1080p/30fps，H.264，约2.70 MiB，静音字幕版。独立播放页使用原生 HTML5 控件，无自动播放；无法播放时可下载 MP4。GitHub 文件页可能无法预览视频，请使用上方播放页或下载入口。
 
 本片只展示 **yingdao-rpa-copilot**：需求沟通、用户元素捕获、Agent搭建与回读、订单核查运行及三张Excel报表。首次正式运行的127项配置核对、229项实际内容核验，与重复运行补丁及后续用户手动运行分别说明，不把后续画面计为再次独立验收。应用迁移Skill继续参见[文字案例](docs/case-studies/order-account-migration.md)，不属于本片内容。
 
@@ -89,6 +89,6 @@ Skill 是给 Agent 的方法与判断指导。离线工具是本仓库的独立 
 
 个人分工：项目发起人承担需求定义、方案取舍、现场反馈和使用验收；Codex 协助代码、配置、工具执行和证据整理。
 
-有权许可的自编内容采用 [MIT](LICENSE)，来源和商标边界见[许可说明](docs/licensing.md)。MIT许可与仓库可见性分别管理；本批只保存并同步到现有私有仓库，不执行转公开、Release或Pages。公开仍由维护者另行决定。
+有权许可的自编内容采用 [MIT](LICENSE)，来源和商标边界见[许可说明](docs/licensing.md)。MIT许可与仓库可见性分别管理；公开仓库包含已审阅文件及可见历史，Pages站点仅部署播放器页、视频和封面，不发布整个文档目录。
 
 “演示操作＋讲解＋规则补充”暂缓，仅在[路线图](docs/roadmap.md)记录，不是第一版阻塞。

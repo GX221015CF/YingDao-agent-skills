@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="影刀自动化搭建 Skill 的个人项目演示视频。">
+    <meta name="theme-color" content="#f5f7fa">
+    <title>影刀自动化搭建 Skill · 视频演示</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: system-ui, "Microsoft YaHei", sans-serif;
+        color: #17212b;
+        background: #f5f7fa;
+      }
+
+      * { box-sizing: border-box; }
+      body { margin: 0; }
+      main {
+        width: min(100% - 32px, 1040px);
+        margin: 48px auto;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 28px;
+        line-height: 1.35;
+      }
+      .subtitle { margin: 0 0 24px; color: #52616d; line-height: 1.6; }
+      video {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #111820;
+        border: 1px solid #cbd5dc;
+        border-radius: 8px;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 24px;
+        margin: 20px 0;
+      }
+      a { color: #075f72; text-underline-offset: 3px; }
+      a:focus-visible { outline: 3px solid #dc5a32; outline-offset: 4px; }
+      .note { color: #52616d; font-size: 14px; line-height: 1.7; }
+      @media (max-width: 600px) {
+        main { width: calc(100% - 24px); margin: 24px auto; }
+        h1 { font-size: 23px; }
+        video { border-radius: 4px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>影刀自动化搭建 Skill</h1>
+      <p class="subtitle">从自然语言需求到订单核查流程 · 112秒 · 1080p / 30fps</p>
+
+      <video controls playsinline preload="metadata" poster="yingdao-rpa-copilot-cover.png" aria-label="影刀自动化搭建 Skill 介绍视频">
+        <source src="yingdao-rpa-copilot-intro.mp4" type="video/mp4">
+        浏览器无法播放时，可<a href="yingdao-rpa-copilot-intro.mp4" download>下载 MP4</a>后使用本机播放器观看。
+      </video>
+
+      <nav aria-label="视频文件">
+        <a href="yingdao-rpa-copilot-intro.mp4" download="yingdao-rpa-copilot-intro.mp4">下载 MP4</a>
+      </nav>
+
+      <p class="note">个人项目 · 非官方。视频介绍 yingdao-rpa-copilot 的真实搭建案例；页面仅展示该视频及其封面。影刀名称与标识的权利归其各自权利人所有。</p>
+    </main>
+  </body>
+</html>

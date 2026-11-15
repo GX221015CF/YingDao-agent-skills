@@ -1,0 +1,47 @@
+name: Deploy video showcase
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+      - name: Assemble exact public site
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir site
+          cp docs/showcase/index.html site/index.html
+          cp docs/media/yingdao-rpa-copilot-intro.mp4 site/yingdao-rpa-copilot-intro.mp4
+          cp docs/media/yingdao-rpa-copilot-cover.png site/yingdao-rpa-copilot-cover.png
+          test "$(find site -type f | wc -l)" -eq 3
+          test "$(find site -type f ! -name index.html ! -name yingdao-rpa-copilot-intro.mp4 ! -name yingdao-rpa-copilot-cover.png | wc -l)" -eq 0
+          test "$(sha256sum site/yingdao-rpa-copilot-intro.mp4 | cut -d ' ' -f1)" = "5ae2a51adcb3113fcd7c63a97db4df2c2014629b6b4b3e051486d62638a7279c"
+          test "$(sha256sum site/yingdao-rpa-copilot-cover.png | cut -d ' ' -f1)" = "703d818aa2e886fde81f94083ada3fa7ed6703e3e023f15a9bed4b36383a6e43"
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

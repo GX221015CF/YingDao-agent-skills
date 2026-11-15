@@ -36,6 +36,6 @@
 
 ## GitHub访问
 
-[仓库视频文件页](https://github.com/GX221015CF/YingDao-agent-skills/blob/main/docs/media/yingdao-rpa-copilot-intro.mp4)提供文件信息；[原文件查看/下载入口](https://github.com/GX221015CF/YingDao-agent-skills/raw/refs/heads/main/docs/media/yingdao-rpa-copilot-intro.mp4)指向同一受仓库权限控制的内容。私有仓库需要相应权限，访问者可能先登录。README只使用可点击封面和链接，不保证各端都内嵌播放。
+[独立播放页](https://gx221015cf.github.io/YingDao-agent-skills/)提供原生HTML5播放控件、封面与下载入口，无自动播放；也可[直接打开MP4](https://gx221015cf.github.io/YingDao-agent-skills/yingdao-rpa-copilot-intro.mp4)或使用[仓库原文件备用入口](https://github.com/GX221015CF/YingDao-agent-skills/raw/refs/heads/main/docs/media/yingdao-rpa-copilot-intro.mp4)。GitHub文件页可能无法预览视频，README不依赖文件页内嵌播放。
 
-本批只同步到现有私有main，不使用Git LFS、外部托管、Release或Pages；以后是否公开由维护者另行决定。
+2026-11-16维护者授权公开现有仓库并部署Pages。站点产物仅含播放器HTML、上述MP4及封面PNG；不直接发布整个docs目录。源码仓库的公开范围与Pages三文件产物分别管理，媒体仍保持上述权利边界。

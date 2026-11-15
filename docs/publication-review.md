@@ -41,7 +41,3 @@
 ## 当前公开视频播放页
 
 本次复用上述审阅，定向核对新增播放器和workflow，以及远端分支、标签与可见历史范围。Pages使用GitHub Actions，产物只包含`index.html`、`yingdao-rpa-copilot-intro.mp4`和`yingdao-rpa-copilot-cover.png`；不部署整个docs目录。README观看入口指向[独立播放页](https://gx221015cf.github.io/YingDao-agent-skills/)，下载入口指向同站点原字节MP4。部署、媒体响应与浏览器实际播放分别验收，不以HTTP成功代替实播结论。
-
-## 个人分工
-
-项目发起人承担需求定义、方案取舍、现场反馈和使用验收；Codex协助代码、配置、工具执行与证据整理。这里是客观项目说明，不把手动使用影刀等同于Skill开发，也不将案例通过写成通用执行能力。

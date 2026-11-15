@@ -1,6 +1,8 @@
 # YingDao-agent-skills
 
-面向影刀 RPA 的 Agent 协作方法、最小离线工具和脱敏案例。当前为 **v0.1.0**：文档、可运行离线示例和真实案例摘要已纳入公开范围审阅与版本管理。仓库公开提供这些材料，不会安装或替换全局 Skill。
+面向影刀 RPA 的 Agent 协作方法、最小离线工具和脱敏案例。包含自动化搭建与应用迁移两个 Skill，提供标准库离线示例、验证工具和真实案例复盘。
+
+本项目在 AI 辅助下开发完成。
 
 这里有两条路径：
 
@@ -17,7 +19,7 @@
 
 本片只展示 **yingdao-rpa-copilot**：需求沟通、用户元素捕获、Agent搭建与回读、订单核查运行及三张Excel报表。首次正式运行的127项配置核对、229项实际内容核验，与重复运行补丁及后续用户手动运行分别说明，不把后续画面计为再次独立验收。应用迁移Skill继续参见[文字案例](docs/case-studies/order-account-migration.md)，不属于本片内容。
 
-现场依赖正常影刀客户端、当前接口及任务局部适配；用户负责登录、打开专用应用、捕获/修正元素和现场反馈。Skill提供协作方法，不是通用现场执行器。[使用方式](#怎样使用两个-skill)、[能力验证矩阵](docs/skill-validation-matrix.md)及[媒体来源与权利说明](docs/media/README.md)提供具体边界。
+真实场景需要可用的影刀客户端、当前接口和任务适配，具体步骤见[使用方式](#怎样使用两个-skill)。[能力验证矩阵](docs/skill-validation-matrix.md)记录案例结果，[媒体来源](docs/media/README.md)记录成片与标识权利。
 
 ## 快速开始
 
@@ -48,7 +50,7 @@ python -B tools/check_repository.py
 - [应用迁移 Skill](skills/yingdao-app-migration/SKILL.md)
 - [本次离线验证结果](docs/validation.md)
 
-Skill 是给 Agent 的方法与判断指导。离线工具是本仓库的独立 Python 代码；只复制一个 Skill 文件不会自动获得工具、现场连接或执行权限。本候选不执行安装。
+Skill 指导任务判断与实施流程；配套 Python 工具提供离线校验。使用时保留完整 Skill 目录及其 references。
 
 ## 怎样使用两个 Skill
 
@@ -65,7 +67,7 @@ Skill 是给 Agent 的方法与判断指导。离线工具是本仓库的独立 
 |examples/|合成 Schema、候选、反馈、资源和预期结果|
 |tests/|候选、反馈、迁移及 CLI 离线测试|
 |docs/|架构、能力表、来源说明和脱敏案例|
-|public-files.json|经审阅的精确版本管理文件集；沿用原文件名，不代表获准公开|
+|public-files.json|经审阅的精确文件清单|
 |LICENSE|标准 MIT 许可证；适用范围见许可说明|
 |work/、.local/|本地任务上下文、验证回执和内部出处，不纳入公开范围|
 
@@ -79,16 +81,13 @@ Skill 是给 Agent 的方法与判断指导。离线工具是本仓库的独立 
 - 源端验证：[RPA Challenge Input Forms](docs/case-studies/rpa-challenge-source.md) 使用当前 Skill 方法、外部已存在正常客户端及任务局部适配，经过一次失败修正后取得站点 100%（70/70）。该案例不表示本仓库已包含通用现场执行器或跨设备迁移能力。
 - 进阶源端验证：[Excel 订单核查与对账](docs/case-studies/order-reconciliation-source.md) 使用原生网页查询与 CodeFlow 计算，16 行正常及异常结果与事先冻结的独立预期全部一致。新增解析与报表代码、原始材料及现场适配留在本地工作目录，仓库仅纳入脱敏复盘。
 - 当前未包含：现场进程发现、MCP 传输、写入执行器、自动保存或运行、完整应用采集、原生导入、账号权益迁移、图片下载和解码工具。
-- 手动使用影刀不等于通过 Skill 自动搭建；图像材料核验不等于完整应用分享；历史案例成功不证明当前用户环境或任意版本兼容。
 
 迁移Skill原名为 `yingdao-image-migration`。本次补齐应用整体迁移工作流并改名为 `yingdao-app-migration`，原图像方法保留在图像专项参考中。Skill方法覆盖范围与本仓库可直接运行的离线工具范围分别见[能力表](docs/capabilities.md)。
 
 ## 来源、公开范围与后续
 
-本版整理自编方法、纯函数、合成材料、脱敏案例及经审阅的介绍视频，没有商业程序集、提取代码、原始业务图像库、名单、完整订单日志或原始配置。视频包含已裁切/遮挡的练习界面，封面引用影刀官网Logo；外部界面和商标不属本项目MIT授权。公开文件通过来源编号追溯改编关系，私人出处留本地。详见[来源与适配](docs/provenance.md)、[媒体说明](docs/media/README.md)及[公开范围审阅](docs/publication-review.md)。
+方法、工具、合成示例、脱敏案例与介绍视频按文件清单收录。视频包含已裁切/遮挡的练习界面，封面引用影刀官网Logo；外部界面和商标不属本项目MIT授权。公开文件通过来源编号追溯改编关系，私人出处留本地。详见[来源与适配](docs/provenance.md)、[媒体说明](docs/media/README.md)及[公开范围审阅](docs/publication-review.md)。
 
-个人分工：项目发起人承担需求定义、方案取舍、现场反馈和使用验收；Codex 协助代码、配置、工具执行和证据整理。
+自编内容采用 [MIT](LICENSE)。第三方标识、外部界面及媒体的适用范围见[许可说明](docs/licensing.md)。
 
-有权许可的自编内容采用 [MIT](LICENSE)，来源和商标边界见[许可说明](docs/licensing.md)。MIT许可与仓库可见性分别管理；公开仓库包含已审阅文件及可见历史，Pages站点仅部署播放器页、视频和封面，不发布整个文档目录。
-
-“演示操作＋讲解＋规则补充”暂缓，仅在[路线图](docs/roadmap.md)记录，不是第一版阻塞。
+后续方向见[路线图](docs/roadmap.md)。

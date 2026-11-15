@@ -7,6 +7,18 @@
 1. **从业务需求到自动化搭建**：使用 yingdao-rpa-copilot 整理输入输出、流程、变量和验收；本版用六节点小分支演示候选校验和反馈解析。
 2. **从已有应用到迁移复用**：使用 yingdao-app-migration 组织源端采集、已有工具选路、流程/代码/参数/变量/元素/资源映射、依赖及路径适配、目标接入和结果验收，图像交付作为其中专项。本版合成清单示例验证材料、字段映射、摘要和缺件；现场迁移执行器仍按来源项目与当前合同核验。
 
+## 112秒演示：自动化搭建 Skill
+
+[![影刀自动化搭建 Skill：从自然语言需求到订单核查流程；个人项目，非官方](docs/media/yingdao-rpa-copilot-cover.png)](docs/media/yingdao-rpa-copilot-intro.mp4)
+
+**[打开视频文件页](docs/media/yingdao-rpa-copilot-intro.mp4)** · [查看原文件或下载](https://github.com/GX221015CF/YingDao-agent-skills/raw/refs/heads/main/docs/media/yingdao-rpa-copilot-intro.mp4) · [本次案例与证据范围](docs/case-studies/order-recording-demo.md)
+
+112秒，1080p/30fps，H.264，约2.70 MiB，静音字幕版。GitHub是否显示播放控件取决于访问环境；可通过文件页或原文件入口取得视频。仓库目前私有，链接需要相应访问权限。
+
+本片只展示 **yingdao-rpa-copilot**：需求沟通、用户元素捕获、Agent搭建与回读、订单核查运行及三张Excel报表。首次正式运行的127项配置核对、229项实际内容核验，与重复运行补丁及后续用户手动运行分别说明，不把后续画面计为再次独立验收。应用迁移Skill继续参见[文字案例](docs/case-studies/order-account-migration.md)，不属于本片内容。
+
+现场依赖正常影刀客户端、当前接口及任务局部适配；用户负责登录、打开专用应用、捕获/修正元素和现场反馈。Skill提供协作方法，不是通用现场执行器。[使用方式](#怎样使用两个-skill)、[能力验证矩阵](docs/skill-validation-matrix.md)及[媒体来源与权利说明](docs/media/README.md)提供具体边界。
+
 ## 快速开始
 
 环境：Python 3.10+，仅标准库；本轮实测 Python 3.12.10 / Windows。无需登录影刀、安装依赖或联网。
@@ -73,10 +85,10 @@ Skill 是给 Agent 的方法与判断指导。离线工具是本仓库的独立 
 
 ## 来源、公开范围与后续
 
-本版只整理自编方法、纯函数和合成材料，没有商业程序集、提取代码、真实业务图像、名单、完整订单日志或原始配置。公开文件通过来源编号追溯改编关系，私人出处留本地。详见[来源与适配](docs/provenance.md)及[公开范围审阅](docs/publication-review.md)。
+本版整理自编方法、纯函数、合成材料、脱敏案例及经审阅的介绍视频，没有商业程序集、提取代码、原始业务图像库、名单、完整订单日志或原始配置。视频包含已裁切/遮挡的练习界面，封面引用影刀官网Logo；外部界面和商标不属本项目MIT授权。公开文件通过来源编号追溯改编关系，私人出处留本地。详见[来源与适配](docs/provenance.md)、[媒体说明](docs/media/README.md)及[公开范围审阅](docs/publication-review.md)。
 
 个人分工：项目发起人承担需求定义、方案取舍、现场反馈和使用验收；Codex 协助代码、配置、工具执行和证据整理。
 
-有权许可的自编内容采用 [MIT](LICENSE)，来源和商标边界见[许可说明](docs/licensing.md)。MIT 许可与仓库可见性分别管理；本轮只审查并本地保存待公开候选，没有推送或执行转公开操作。历史私有同步与本候选的保存范围见[公开准备说明](docs/publication-review.md)。
+有权许可的自编内容采用 [MIT](LICENSE)，来源和商标边界见[许可说明](docs/licensing.md)。MIT许可与仓库可见性分别管理；本批只保存并同步到现有私有仓库，不执行转公开、Release或Pages。公开仍由维护者另行决定。
 
 “演示操作＋讲解＋规则补充”暂缓，仅在[路线图](docs/roadmap.md)记录，不是第一版阻塞。

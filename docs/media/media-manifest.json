@@ -1,0 +1,37 @@
+{
+  "format": "yingdao-repository-media/1",
+  "files": [
+    {
+      "path": "docs/media/yingdao-rpa-copilot-intro.mp4",
+      "bytes": 2828643,
+      "sha256": "5ae2a51adcb3113fcd7c63a97db4df2c2014629b6b4b3e051486d62638a7279c",
+      "content_type": "video/mp4",
+      "source_id": "MEDIA-01",
+      "rights": "mixed_video_not_mit"
+    },
+    {
+      "path": "docs/media/yingdao-rpa-copilot-cover.png",
+      "bytes": 75805,
+      "sha256": "703d818aa2e886fde81f94083ada3fa7ed6703e3e023f15a9bed4b36383a6e43",
+      "content_type": "image/png",
+      "source_id": "MEDIA-02,MEDIA-03",
+      "rights": "mixed_cover_logo_excluded"
+    },
+    {
+      "path": "docs/media/yingdao-rpa-copilot-cover.svg",
+      "bytes": 3113,
+      "sha256": "8d1068371d447a513c6e07d40b61d83b2b456330018f4ec660af55b8105651f1",
+      "content_type": "image/svg+xml",
+      "source_id": "MEDIA-02,MEDIA-03",
+      "rights": "mixed_cover_logo_excluded"
+    },
+    {
+      "path": "docs/media/yingdao-official-mark.svg",
+      "bytes": 1553,
+      "sha256": "a762f487a14dd34de5eea96b37c6af64eaf2f18befaf2c72860ff31bbc355dc8",
+      "content_type": "image/svg+xml",
+      "source_id": "MEDIA-02",
+      "rights": "third_party_trademark_not_mit"
+    }
+  ]
+}
